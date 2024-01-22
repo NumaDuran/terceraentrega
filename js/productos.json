@@ -1,0 +1,182 @@
+[
+    {
+        "id": "chocolate-01",
+        "titulo": "Chocolate 01",
+        "imagen": "./img/Chocolates/chcolate04.jpeg",
+        "categoria": {
+            "nombre": "Chocolates",
+            "id": "chocolates"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "chocolate-02",
+        "titulo": "Chocolate 02",
+        "imagen": "./img/Chocolates/chcolate04.jpeg",
+        "categoria": {
+            "nombre": "Chocolates",
+            "id": "chocolates"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "chocolate-03",
+        "titulo": "Chocolate 03",
+        "imagen": "./img/Chocolates/chcolate04.jpeg",
+        "categoria": {
+            "nombre": "Chocolates",
+            "id": "chocolates"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "chocolate-04",
+        "titulo": "Chocolate 04",
+        "imagen": "./img/Chocolates/chcolate04.jpeg",
+        "categoria": {
+            "nombre": "Chocolates",
+            "id": "chocolates"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "chocolate-05",
+        "titulo": "Chocolate 05",
+        "imagen": "./img/Chocolates/chcolate04.jpeg",
+        "categoria": {
+            "nombre": "Chocolates",
+            "id": "chocolates"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-01",
+        "titulo": "Alfajor 01",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-02",
+        "titulo": "Alfajor 02",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-03",
+        "titulo": "Alfajor 03",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-04",
+        "titulo": "Alfajor 04",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-05",
+        "titulo": "Alfajor 05",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-06",
+        "titulo": "Alfajor 06",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-07",
+        "titulo": "Alfajor-07",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "alfajor-08",
+        "titulo": "Alfajor 08",
+        "imagen": "./img/Alfajores/alfajor.jpg",
+        "categoria": {
+            "nombre": "Alfajores",
+            "id": "alfajores"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "gomita-01",
+        "titulo": "Gomita 01",
+        "imagen": "./img/Gomitas/gomita.jpg",
+        "categoria": {
+            "nombre": "Gomitas",
+            "id": "gomitas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "gomita-02",
+        "titulo": "Gomita 02",
+        "imagen": "./img/Gomitas/gomita.jpg",
+        "categoria": {
+            "nombre": "Gomitas",
+            "id": "gomitas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "gomita-03",
+        "titulo": "Gomita 03",
+        "imagen": "./img/Gomitas/gomita.jpg",
+        "categoria": {
+            "nombre": "Gomitas",
+            "id": "gomitas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "gomita-04",
+        "titulo": "Gomita 04",
+        "imagen": "./img/Gomitas/gomita.jpg",
+        "categoria": {
+            "nombre": "Gomitas",
+            "id": "gomitas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "gomita-05",
+        "titulo": "Gomita 05",
+        "imagen": "./img/Gomitas/gomita.jpg",
+        "categoria": {
+            "nombre": "Gomitas",
+            "id": "gomitas"
+        },
+        "precio": 1000
+    }
+]
