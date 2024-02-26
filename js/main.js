@@ -33,6 +33,7 @@ function cargarProductos(productosElegidos) {
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
+                <input type="number" class="producto-cantidad" value="1" min="1">
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
         `;
@@ -105,15 +106,18 @@ function agregarAlCarrito(e) {
       }).showToast();
 
     const idBoton = e.currentTarget.id;
+    const cantidad = parseInt(e.currentTarget.parentElement.querySelector(".producto-cantidad").value);
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
+    
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-        productosEnCarrito[index].cantidad++;
+        productosEnCarrito[index].cantidad += cantidad;
     } else {
-        productoAgregado.cantidad = 1;
+        productoAgregado.cantidad = cantidad;
         productosEnCarrito.push(productoAgregado);
     }
+
 
     actualizarNumerito();
 
@@ -124,3 +128,26 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+function generarIdUnico() {
+    return '_' + Math.random().toString(36).substr(2, 9);
+}
+
+function generarFechaEntrega() {
+    const fechaHoy = new Date();
+    const fechaEntrega = new Date();
+    fechaEntrega.setDate(fechaHoy.getDate() + 5);
+    return fechaEntrega.toISOString().split('T')[0];
+}
+
+botonComprar.addEventListener("click", comprarCarrito);
+function comprarCarrito() {
+    const idPedido = generarIdUnico();
+    const fechaEntrega = generarFechaEntrega();
+
+    productosEnCarrito.length = 0;
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+    contenedorCarritoVacio.classList.add("disabled");
+    contenedorCarritoProductos.classList.add("disabled");
+    contenedorCarritoAcciones.classList.add("disabled");
+    contenedorCarritoComprado.classList.remove("disabled");
